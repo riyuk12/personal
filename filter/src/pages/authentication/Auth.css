@@ -1,0 +1,33 @@
+:root{
+    --card1:#BCEAD5;
+    --card2:#9ED5C5;
+    --card3:#8EC3B0;
+    --background:#DEF5E5;
+    --text:#DEF5E5;
+}
+
+.cardContainer{
+    display: flex;
+    width:60vh ;
+}
+
+.card{
+    min-height: 600px;
+    min-width: 400px;
+    height: 60vh;
+    width: 50vh;
+    position: absolute;   
+}
+
+.card1{
+    background-color: var(--card1);
+    z-index: 3;
+}
+.card2{
+    background-color: var(--card2);
+    z-index: 2;
+}
+.card3{
+    background-color: var(--card3);
+    z-index: 1;
+}
