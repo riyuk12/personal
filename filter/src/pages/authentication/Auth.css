@@ -4,30 +4,84 @@
     --card3:#8EC3B0;
     --background:#DEF5E5;
     --text:#DEF5E5;
+
+    --offset:0;
+    --offset2:30;
+    --offset3:60;
+
+    --positionX:30%;
+    --positionY:10%;
+    --positionX2:30%;
+    --positionY2:10%;
+    --positionX3:30%;
+    --positionY3:10%;
+    --positionXbg:0;
+    --positionYbg:0;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text);
+    overflow: hidden;
+    
+}
+
+.dots{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/bgdots.png);
+    background-size: cover;
+    background-position: var(--positionXbg) var(--positionYbg);
 }
 
 .cardContainer{
     display: flex;
     width:60vh ;
+    height: 60vh; 
+    min-height: 600px;
+    padding: 0;
+    top: var(--positionY);
+    left: var(--positionX);
 }
 
 .card{
-    min-height: 600px;
+    margin: 0;
+    min-height: 550px;
     min-width: 400px;
-    height: 60vh;
-    width: 50vh;
     position: absolute;   
+    border-radius: 24px;
+    
 }
 
 .card1{
     background-color: var(--card1);
     z-index: 3;
+    top: var(--positionY);
+    left: var(--positionX);
+    display: flex;
+    flex-direction: column;
 }
 .card2{
     background-color: var(--card2);
     z-index: 2;
+    top: var(--positionY2);
+    left: var(--positionX2);
 }
 .card3{
     background-color: var(--card3);
     z-index: 1;
+    top: var(--positionY3);
+    left: var(--positionX3);
+}
+
+.logo{
+    margin-block:20px ;
+    object-fit: contain;
+    height: 80px;
 }
