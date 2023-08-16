@@ -44,7 +44,7 @@
     display: flex;
     width:60vh ;
     height: 60vh; 
-    min-height: 600px;
+    min-height: 500px;
     padding: 0;
     top: var(--positionY);
     left: var(--positionX);
@@ -85,3 +85,103 @@
     object-fit: contain;
     height: 80px;
 }
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.pass_container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #DEF5E5;
+    height: 40px;
+    border-radius: 15px;
+}
+.username,.password{
+
+    border: none;
+    flex: 0.6;
+        
+}
+.username{
+    margin-left:30px;
+}
+
+.username,.password:focus{
+    border: none;
+    outline: none;
+}
+
+
+.pass_container>button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.username_container{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: var(--text);
+    height: 40px;
+    border-radius: 15px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.container-input>h4{
+    margin: 0;
+    margin-inline: 10px;
+}
+
+.register_link{
+    margin-block:10px ;
+    color: var(--card3);
+}
+
+.login_button{
+    margin:10px ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: var(--text);
+    background-color: var(--card3);
+    font-size: 20px;
+    
+    
+} 
+
+
+
+.login_button:focus{
+    border: none;
+    outline: none;
+}
+
+.login_button:active{
+    transition: background-color 200ms ease;
+    color: var(--text);
+    background-color: #72ad98;
+    font-size: 20px;
+    
+} 
