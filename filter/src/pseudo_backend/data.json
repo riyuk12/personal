@@ -1,0 +1,125 @@
+[
+    {
+      "token": null,
+      "basicProfile": {
+        "username": "riyuk",
+        "fullName": "John Doe",
+        "profilePicture": "profile.jpg",
+        "bio": "Avid explorer of life.",
+        "website": "https://www.example.com"
+      },
+      "socialConnections": {
+        "followers": ["user123", "user456"],
+        "following": ["user789"],
+        "mutualConnections": ["user456"]
+      },
+      "postsAndMedia": {
+        "uploadedMedia": ["post1.jpg"],
+        "captions": ["Enjoying the sunset."],
+        "locationTags": ["Beach"],
+        "hashtags": ["sunset"],
+        "timestamps": ["2023-08-17"]
+      },
+      "interactions": {
+        "likes": ["user123"],
+        "comments": [{"user": "user456", "comment": "Beautiful view!"}],
+        "savedPosts": [],
+        "sharedPosts": [],
+        "views": []
+      },
+      "directMessaging": {
+        "conversations": ["user789"],
+        "messages": [{"from": "user789", "message": "Hey there!"}]
+      },
+      "settingsAndPreferences": {
+        "privacySettings": {
+          "accountVisibility": "private",
+          "comments": "followers"
+        },
+        "notificationPreferences": ["likes", "comments"],
+        "accountSettings": {
+          "language": "English",
+          "deactivation": false
+        }
+      },
+      "exploreAndDiscover": {
+        "exploreHistory": ["beaches", "travel"],
+        "suggestedUsers": ["user789", "user101"]
+      },
+      "analyticsAndInsights": {
+        "engagementMetrics": {
+          "followers": 200,
+          "following": 100,
+          "likes": 50,
+          "comments": 20
+        },
+        "growthTrends": ["2023-07-01:" , 180, "2023-08-01:", 200]
+      },
+      "additionalInformation": {
+        "linkedAccounts": ["twitter.com/johndoe"],
+        "businessInfo": {}
+      }
+    },
+    {
+      "token": null,
+      "basicProfile": {
+        "username": "exampleUser2",
+        "fullName": "Jane Smith",
+        "profilePicture": "profile2.jpg",
+        "bio": "Food lover and traveler.",
+        "website": "https://www.janesadventures.com"
+      },
+      "socialConnections": {
+        "followers": ["user789"],
+        "following": ["user101", "user456"],
+        "mutualConnections": []
+      },
+      "postsAndMedia": {
+        "uploadedMedia": ["food1.jpg", "travel1.jpg"],
+        "captions": ["Delicious brunch!", "Exploring new places."],
+        "locationTags": ["Cafe", "Mountains"],
+        "hashtags": ["foodie", "adventure"],
+        "timestamps": ["2023-08-15", "2023-08-16"]
+      },
+      "interactions": {
+        "likes": ["user101", "user456"],
+        "comments": [{"user": "user789", "comment": "Yummy looking food!"}],
+        "savedPosts": [],
+        "sharedPosts": [],
+        "views": []
+      },
+      "directMessaging": {
+        "conversations": ["user123", "user456"],
+        "messages": [{"from": "user123", "message": "Hi Jane!"}]
+      },
+      "settingsAndPreferences": {
+        "privacySettings": {
+          "accountVisibility": "public",
+          "comments": "everyone"
+        },
+        "notificationPreferences": ["likes", "comments", "follows"],
+        "accountSettings": {
+          "language": "English",
+          "deactivation": false
+        }
+      },
+      "exploreAndDiscover": {
+        "exploreHistory": ["food", "nature"],
+        "suggestedUsers": ["user123", "user789"]
+      },
+      "analyticsAndInsights": {
+        "engagementMetrics": {
+          "followers": 300,
+          "following": 150,
+          "likes": 80,
+          "comments": 30
+        },
+        "growthTrends": ["2023-07-01:" ,280, "2023-08-01:", 300]
+      },
+      "additionalInformation": {
+        "linkedAccounts": ["facebook.com/janesmith"],
+        "businessInfo": {}
+      }
+    }
+  ]
+  

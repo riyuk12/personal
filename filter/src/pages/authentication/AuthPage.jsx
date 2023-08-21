@@ -19,7 +19,7 @@ const BaseCard=()=>{
     ) 
 }
 
-function AuthPage() {
+function AuthPage({setverified,verified}) {
   let x=0;
   let y=0;
   document.onmousemove = function(event)
@@ -54,7 +54,7 @@ function AuthPage() {
       </div>
       <Routes>  
         <Route path='/' element={<BaseCard />}>
-          <Route path='/' element={ <Login/> }/>
+          <Route path='/' element={ <Login verified={verified} setverified={setverified}/> }/>
           <Route path='/register' element={<Register/>}/>
         </Route>
       </Routes>

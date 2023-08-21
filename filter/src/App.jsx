@@ -12,9 +12,10 @@ function App() {
   const [{user},dispatch]=useDataLayerValue();
   const [verified,setverified]=useState(false);
 
+
   return (
     <>
-    {verified ? <Dashboard />:<AuthPage/> }
+    {verified ? <Dashboard />:<AuthPage verified={verified} setverified={setverified}/> }
     
     </>
   )

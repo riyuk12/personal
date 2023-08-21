@@ -73,6 +73,11 @@ const initialData={
 
         //action ->type,[payload]
         switch(action.type){
+          case 'SET_USER':
+            return{
+              ...state,
+              user:action.user
+            } 
         }
     }
 

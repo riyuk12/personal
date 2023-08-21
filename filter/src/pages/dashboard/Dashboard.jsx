@@ -1,11 +1,15 @@
 import React from 'react'
 import { Route,Routes } from 'react-router-dom'
+import {useDataLayerValue } from '../../components/datalayer/Datalayer'
+import Homepage from './Homepage';
 
 function Dashboard() {
+  const [{user},dispatch]=useDataLayerValue();
+  console.log(user)
   return (
     <Routes>  
-      <Route path='/' element={<h1>hehe</h1>}>
-        <Route path='/child' element={<h1>Home</h1>}/>
+      <Route path='/' element={ <Homepage /> }>
+        <Route index element={<h1>Home</h1>}/>
       </Route>
     </Routes>
   )
