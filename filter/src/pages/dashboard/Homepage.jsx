@@ -1,6 +1,7 @@
 import React from 'react'
 import './homepage.css'
 import filter from '../../assets/filter.png'
+import Post from '../../components/dashboard/Post'
 
 function Homepage() {
   return (
@@ -22,7 +23,7 @@ function Homepage() {
                 stories make a component
             </div>
             <div className="posts_container">
-                posts make a component
+                <Post />
             </div>
 
         </div>
