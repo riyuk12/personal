@@ -1,0 +1,24 @@
+.header,.footer{
+    background-color: #8EC3B0 ;
+
+
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.content{
+    background-color:#DEF5E5 ; 
+}
+
+.pfp{
+    height: 50px;
+    width: 50px;
+    margin-inline: 20px;
+}

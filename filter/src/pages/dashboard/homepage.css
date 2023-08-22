@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #8EC3B0;
 }
 
 
@@ -15,7 +16,7 @@
 
 .main_container{
     flex: 0.5;
-    background-color: blue;
+    background-color: #BCEAD5;
 }
 
 .nav{
@@ -24,6 +25,8 @@
     align-items: center;
     justify-content: center;
     gap:30px;
+    background-color: #70AD97;
+    border-radius: 0 30px 30px 0;
 }
 
 
@@ -46,21 +49,64 @@
 
 
 .following{
+    position: relative;
+    flex: 0.05;
     display: flex;
     flex-direction: column;
-
     justify-content: flex-start;
-
+    background-color: #70AD97;
+    border-radius: 30px 0 0 30px;
     gap: 40px;
+    transition: ease 0.1s all;
 }
+
+.following:hover{
+    position: relative;
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #70AD97;
+    border-radius: 30px 0 0 30px;
+    gap: 40px;
+    transition: ease 0.1s all;
+}
+
+.following h2 {
+    display: none;
+}
+.following img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.following:hover img{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.following:hover h2{
+    display: block;
+    flex: 0.6;
+}
+
 .profile_link{
     margin-top: 50px;
     height: 80px;
 }
 
+
+
 .user{
     height: 40px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .main_container{
@@ -111,4 +157,12 @@
 }
 .content{
     flex: 1;
+}
+
+.main_container{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }

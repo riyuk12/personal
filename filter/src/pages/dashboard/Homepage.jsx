@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './homepage.css'
 import filter from '../../assets/filter.png'
 import Post from '../../components/dashboard/Post'
+import { Description } from '@mui/icons-material'
+import { Filter } from '@mui/icons-material'
 
 function Homepage() {
+    const [posts,setposts]=useState([])
+
+    useEffect(()=>{
+        fetch('/src/pseudo_backend/posts.json')
+        .then((res)=>{
+            return  res.json()
+        })
+        .then((data)=>setposts(data))
+        .catch((error)=>{console.log(error)})
+    },[])
+
   return (
     <div className="cover">
         <div className="nav">
@@ -23,20 +36,41 @@ function Homepage() {
                 stories make a component
             </div>
             <div className="posts_container">
-                <Post />
+                {posts.map((post)=>( <Post imgurl={post?.image_url} desc={post?.description} username={post?.username} profile_picture={post?.profile_picture_url} /> ))} 
+                
             </div>
+
+            {/* empty main container create logic to switch between homepage,explore and profile */}
 
         </div>
         <div className="following">
             <div className="profile_link">
-                riyuk
+                <div className="user user1">
+                    <img src={filter} />
+                    <h2>riyuk</h2>
+                </div>
             </div>
             <div className="suggestedusers">
-                <div className="user user1">user1</div>
-                <div className="user user2">user2</div>
-                <div className="user user3">user3</div>
-                <div className="user user4">user4</div>
-                <div className="user user5">user5</div>
+                <div className="user user1">
+                    <img src={filter} />
+                    <h2>user1</h2>
+                </div>
+                <div className="user user2">
+                    <img src="" />
+                    <h2>user2</h2>
+                </div>
+                <div className="user user3">
+                    <img src="" />
+                    <h2>user3</h2>
+                </div>
+                <div className="user user4">
+                    <img src="" />
+                    <h2>user4</h2>
+                </div>
+                <div className="user user5">
+                    <img src="" />
+                    <h2>user5</h2>
+                </div>
             </div>
         </div>
     </div>
