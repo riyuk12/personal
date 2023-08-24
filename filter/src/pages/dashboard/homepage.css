@@ -166,3 +166,44 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+.explore_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagebase{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 1px;
+    
+}
+.imagebase >img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.card_cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card_cover:hover{
+    z-index: 2;
+    opacity: 0.5;
+    color: white;
+    display: flex;
+}
+/* explore_post_container */

@@ -110,6 +110,7 @@
     border: none;
     flex: 0.6;
     background-color: var(--background);
+    color: black;
         
 }
 .username{

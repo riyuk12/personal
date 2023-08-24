@@ -1,62 +1,72 @@
 [
-    {
-      "profile_picture_url": "https://example.com/user1_profile.jpg",
-      "username": "user1",
-      "image_url": "https://example.com/user1_image.jpg",
-      "description": "Avid photographer and nature lover"
-    },
-    {
-      "profile_picture_url": "https://example.com/user2_profile.jpg",
-      "username": "user2",
-      "image_url": "https://example.com/user2_image.jpg",
-      "description": "Food enthusiast exploring the culinary world"
-    },
-    {
-      "profile_picture_url": "https://example.com/user3_profile.jpg",
-      "username": "user3",
-      "image_url": "https://example.com/user3_image.jpg",
-      "description": "Travel addict sharing my global adventures"
-    },
-    {
-      "profile_picture_url": "https://example.com/user4_profile.jpg",
-      "username": "user4",
-      "image_url": "https://example.com/user4_image.jpg",
-      "description": "Fitness freak and health advocate"
-    },
-    {
-      "profile_picture_url": "https://example.com/user5_profile.jpg",
-      "username": "user5",
-      "image_url": "https://example.com/user5_image.jpg",
-      "description": "Tech geek and coding enthusiast"
-    },
-    {
-      "profile_picture_url": "https://example.com/user6_profile.jpg",
-      "username": "user6",
-      "image_url": "https://example.com/user6_image.jpg",
-      "description": "Art and music lover, on a creative journey"
-    },
-    {
-      "profile_picture_url": "https://example.com/user7_profile.jpg",
-      "username": "user7",
-      "image_url": "https://example.com/user7_image.jpg",
-      "description": "Fashionista with a passion for style"
-    },
-    {
-      "profile_picture_url": "https://example.com/user8_profile.jpg",
-      "username": "user8",
-      "image_url": "https://example.com/user8_image.jpg",
-      "description": "Bookworm and literature enthusiast"
-    },
-    {
-      "profile_picture_url": "https://example.com/user9_profile.jpg",
-      "username": "user9",
-      "image_url": "https://example.com/user9_image.jpg",
-      "description": "Outdoor adventurer seeking new thrills"
-    },
-    {
-      "profile_picture_url": "https://example.com/user10_profile.jpg",
-      "username": "user10",
-      "image_url": "https://example.com/user10_image.jpg",
-      "description": "Dog lover and pet parent"
-    }
-  ]
+  {
+    "profile_picture_url": "https://example.com/user1_profile.jpg",
+    "username": "user1",
+    "image_url": "https://example.com/user1_image.jpg",
+    "description": "Avid photographer and nature lover",
+    "like": 15
+  },
+  {
+    "profile_picture_url": "https://example.com/user2_profile.jpg",
+    "username": "user2",
+    "image_url": "https://example.com/user2_image.jpg",
+    "description": "Food enthusiast exploring the culinary world",
+    "like": 42
+  },
+  {
+    "profile_picture_url": "https://example.com/user3_profile.jpg",
+    "username": "user3",
+    "image_url": "https://example.com/user3_image.jpg",
+    "description": "Travel addict sharing my global adventures",
+    "like": 28
+  },
+  {
+    "profile_picture_url": "https://example.com/user4_profile.jpg",
+    "username": "user4",
+    "image_url": "https://example.com/user4_image.jpg",
+    "description": "Fitness freak and health advocate",
+    "like": 9
+  },
+  {
+    "profile_picture_url": "https://example.com/user5_profile.jpg",
+    "username": "user5",
+    "image_url": "https://example.com/user5_image.jpg",
+    "description": "Tech geek and coding enthusiast",
+    "like": 71
+  },
+  {
+    "profile_picture_url": "https://example.com/user6_profile.jpg",
+    "username": "user6",
+    "image_url": "https://example.com/user6_image.jpg",
+    "description": "Art and music lover, on a creative journey",
+    "like": 53
+  },
+  {
+    "profile_picture_url": "https://example.com/user7_profile.jpg",
+    "username": "user7",
+    "image_url": "https://example.com/user7_image.jpg",
+    "description": "Fashionista with a passion for style",
+    "like": 37
+  },
+  {
+    "profile_picture_url": "https://example.com/user8_profile.jpg",
+    "username": "user8",
+    "image_url": "https://example.com/user8_image.jpg",
+    "description": "Bookworm and literature enthusiast",
+    "like": 12
+  },
+  {
+    "profile_picture_url": "https://example.com/user9_profile.jpg",
+    "username": "user9",
+    "image_url": "https://example.com/user9_image.jpg",
+    "description": "Outdoor adventurer seeking new thrills",
+    "like": 64
+  },
+  {
+    "profile_picture_url": "https://example.com/user10_profile.jpg",
+    "username": "user10",
+    "image_url": "https://example.com/user10_image.jpg",
+    "description": "Dog lover and pet parent",
+    "like": 23
+  }
+]

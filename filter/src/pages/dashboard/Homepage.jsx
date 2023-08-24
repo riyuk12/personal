@@ -4,9 +4,12 @@ import filter from '../../assets/filter.png'
 import Post from '../../components/dashboard/Post'
 import { Description } from '@mui/icons-material'
 import { Filter } from '@mui/icons-material'
+import Feed from './Feed'
+import Explore from './Explore'
 
 function Homepage() {
     const [posts,setposts]=useState([])
+    const [activetab,setactivetab]=useState('home'); 
 
     useEffect(()=>{
         fetch('/src/pseudo_backend/posts.json')
@@ -24,24 +27,18 @@ function Homepage() {
                 <img src={filter} />
             </div>
             <div className="menu_container">
-                <div className="tab home"> home</div>
-                <div className="tab explore">explore</div>
-                <div className="tab create">create</div>
-                <div className="tab profile">profile</div>
+                <div className="tab home" onClick={()=>setactivetab("home")}> home</div>
+                <div className="tab explore" onClick={()=>setactivetab("explore")}>explore</div>
+                <div className="tab create" onClick={()=>setactivetab("create")}>create</div>
+                <div className="tab profile" onClick={()=>setactivetab("profile")}>profile</div>
             </div>
 
         </div>
         <div className="main_container">
-            <div className="stories_container">
-                stories make a component
-            </div>
-            <div className="posts_container">
-                {posts.map((post)=>( <Post imgurl={post?.image_url} desc={post?.description} username={post?.username} profile_picture={post?.profile_picture_url} /> ))} 
-                
-            </div>
+            {(activetab=="home") && <Feed posts={posts}/>}
+            {(activetab=="explore") && <Explore posts={posts} />}
 
-            {/* empty main container create logic to switch between homepage,explore and profile */}
-
+            {/* could use router to make better look it up */}
         </div>
         <div className="following">
             <div className="profile_link">
