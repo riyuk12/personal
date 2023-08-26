@@ -170,6 +170,7 @@
 .explore_container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .imagebase{
     height: 200px;
@@ -266,3 +267,8 @@
     color: black;
 }
 
+.userpostscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

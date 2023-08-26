@@ -40,7 +40,7 @@ function Homepage() {
         <div className="main_container">
             {(activetab=="home") && <Feed posts={posts}/>}
             {(activetab=="explore") && <Explore posts={posts} />}
-            {(activetab=="profile") && <UserProfile user={user} />}
+            {(activetab=="profile") && <UserProfile user={user } posts={posts} />}
 
             {/* could use router to make better look it up */}
         </div>

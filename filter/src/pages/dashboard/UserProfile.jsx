@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import { useState } from 'react'
 import Post from '../../components/dashboard/Post'
+import ExploreCards from '../../components/dashboard/ExploreCards'
 
-function UserProfile({user}) {
+function UserProfile({user,posts}) {
+    const [userPosts,setuserPosts]=useState(posts.filter(post=>post.username==user.basicProfile.username))
   return (
     <div className='userDetailsContainer'>
         
@@ -25,8 +28,8 @@ function UserProfile({user}) {
         </div>
 
         <div className="userpostscontainer">
-            {/* {user?.postsAndMedia?.map((post)=>( <Post imgurl={post?.image_url} desc={post.description} username={user?.basicProfile?.username} profile_picture={user?.basicProfile?.profilePicture}/> ))} */}
-            {console.log(user?.postsAndMedia)}
+            {/* {console.log(userPosts)} */}
+            {userPosts.map((post)=>(<ExploreCards post={post}/>))}
             {/* has issue with post display filter data from post.json */}
         </div>
     </div>

@@ -1,21 +1,21 @@
 [
   {
     "profile_picture_url": "https://example.com/user1_profile.jpg",
-    "username": "user1",
+    "username": "riyuk",
     "image_url": "https://example.com/user1_image.jpg",
     "description": "Avid photographer and nature lover",
     "like": 15
   },
   {
     "profile_picture_url": "https://example.com/user2_profile.jpg",
-    "username": "user2",
+    "username": "riyuk",
     "image_url": "https://example.com/user2_image.jpg",
     "description": "Food enthusiast exploring the culinary world",
     "like": 42
   },
   {
     "profile_picture_url": "https://example.com/user3_profile.jpg",
-    "username": "user3",
+    "username": "riyuk",
     "image_url": "https://example.com/user3_image.jpg",
     "description": "Travel addict sharing my global adventures",
     "like": 28
