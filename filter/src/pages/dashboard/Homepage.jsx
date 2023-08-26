@@ -6,10 +6,13 @@ import { Description } from '@mui/icons-material'
 import { Filter } from '@mui/icons-material'
 import Feed from './Feed'
 import Explore from './Explore'
+import UserProfile from './UserProfile'
+import { useDataLayerValue } from '../../components/datalayer/Datalayer'
 
 function Homepage() {
     const [posts,setposts]=useState([])
     const [activetab,setactivetab]=useState('home'); 
+    const [{user},dispatch]=useDataLayerValue()
 
     useEffect(()=>{
         fetch('/src/pseudo_backend/posts.json')
@@ -37,6 +40,7 @@ function Homepage() {
         <div className="main_container">
             {(activetab=="home") && <Feed posts={posts}/>}
             {(activetab=="explore") && <Explore posts={posts} />}
+            {(activetab=="profile") && <UserProfile user={user} />}
 
             {/* could use router to make better look it up */}
         </div>

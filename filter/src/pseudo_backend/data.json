@@ -26,7 +26,7 @@
         "savedPosts": [],
         "sharedPosts": [],
         "views": []
-      },
+      },  
       "directMessaging": {
         "conversations": ["user789"],
         "messages": [{"from": "user789", "message": "Hey there!"}]
