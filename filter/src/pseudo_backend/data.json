@@ -63,7 +63,7 @@
     {
       "token": null,
       "basicProfile": {
-        "username": "exampleUser2",
+        "username": "test",
         "fullName": "Jane Smith",
         "profilePicture": "profile2.jpg",
         "bio": "Food lover and traveler.",
@@ -109,8 +109,8 @@
       },
       "analyticsAndInsights": {
         "engagementMetrics": {
-          "followers": 300,
-          "following": 150,
+          "following": 300,
+          "followers": 150,
           "likes": 80,
           "comments": 30
         },

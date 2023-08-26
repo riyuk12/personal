@@ -20,8 +20,8 @@ function UserProfile({user,posts}) {
                     < a className="bio">{user?.basicProfile?.website}</a>
                 </div>
                 <div className="userstats">
-                    <h4>following {user?.socialConnections?.following.length}</h4>
-                    <h4>followers {user?.socialConnections?.followers.length}</h4>
+                    <h4>following {user?.analyticsAndInsights?.engagementMetrics?.following}</h4>
+                    <h4>followers {user?.analyticsAndInsights?.engagementMetrics?.followers}</h4>
                     <h4>posts {user?.postsAndMedia?.uploadedMedia.length}</h4>
                 </div>
             </div>
