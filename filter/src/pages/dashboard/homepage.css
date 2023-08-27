@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8EC3B0;
+    background-color: #ddd;
 }
 
 
@@ -16,7 +16,7 @@
 
 .main_container{
     flex: 0.5;
-    background-color: #BCEAD5;
+    background-color: #70AD97;
 }
 
 .nav{
@@ -276,6 +276,7 @@
 
 
 .modal-content{
+    background-color: #00000055;
     width: 50%;
     height:100%;
     display: flex;
