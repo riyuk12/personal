@@ -34,6 +34,10 @@
     height: 50px;
     background-color: red;
     width: 100%;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu_container{
@@ -42,9 +46,9 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-}
-.logo{
-    flex: 0.2;
+    gap:10px;
+    margin-right:10px ;
+    
 }
 
 
@@ -283,4 +287,51 @@
     justify-content: center;
     align-items: center;
 
+}
+
+
+.nav{
+    position: relative;
+    flex: 0.05;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #70AD97;
+    border-radius:0 30px 30px 0;
+    gap: 40px;
+    transition: ease 0.1s all;
+}
+
+.nav:hover{
+    position: relative;
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #70AD97;
+    border-radius:0 30px 30px 0;
+    gap: 40px;
+    transition: ease 0.1s all;
+}
+
+.nav h2 {
+    display: none;
+}
+.nav img {
+    height: 80px;
+    width: 100%;
+    display: none;
+    
+    
+}
+
+.nav:hover img{
+    display: block;
+    height: 80px;
+    width: 100%;
+    
+}
+.nav:hover h2{
+    display: block;
+    flex: 0.6;
 }

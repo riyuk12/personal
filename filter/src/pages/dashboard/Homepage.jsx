@@ -13,6 +13,7 @@ function Homepage() {
     const [posts,setposts]=useState([])
     const [activetab,setactivetab]=useState('home'); 
     const [{user},dispatch]=useDataLayerValue()
+    const [data,setData]=useState([]) 
 
     useEffect(()=>{
         fetch('/src/pseudo_backend/posts.json')
@@ -23,16 +24,17 @@ function Homepage() {
         .catch((error)=>{console.log(error)})
     },[])
 
+
   return (
     <div className="cover">
         <div className="nav">
-            <div className="logo">
+            <div className="logo" onClick={()=>setactivetab("home")}>
                 <img src={filter} />
             </div>
             <div className="menu_container">
                 <div className="tab home" onClick={()=>setactivetab("home")}> home</div>
                 <div className="tab explore" onClick={()=>setactivetab("explore")}>explore</div>
-                <div className="tab create" onClick={()=>setactivetab("create")}>create</div>
+                {/* <div className="tab create" onClick={()=>setactivetab("create")}>create</div> */}
                 <div className="tab profile" onClick={()=>setactivetab("profile")}>profile</div>
             </div>
 
@@ -52,7 +54,7 @@ function Homepage() {
                 </div>
             </div>
             <div className="suggestedusers">
-                <div className="user user1">
+                <div className="user user1" >
                     <img src={filter} />
                     <h2>user1</h2>
                 </div>
