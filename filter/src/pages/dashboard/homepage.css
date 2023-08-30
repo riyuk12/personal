@@ -64,6 +64,15 @@
     transition: ease 0.1s all;
 }
 
+.following>h1{
+    display: none;
+    margin-top: 50px;
+}
+
+.following:hover>h1{
+    display: block;
+}
+
 .following:hover{
     position: relative;
     flex: 0.2;
@@ -105,7 +114,7 @@
 
 
 .user{
-    height: 40px;
+    height: 80px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -334,4 +343,12 @@
 .nav:hover h2{
     display: block;
     flex: 0.6;
+}
+
+
+.suggestedusers{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

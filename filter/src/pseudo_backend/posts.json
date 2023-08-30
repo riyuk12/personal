@@ -22,21 +22,21 @@
   },
   {
     "profile_picture_url": "https://example.com/user4_profile.jpg",
-    "username": "user4",
+    "username": "test",
     "image_url": "https://example.com/user4_image.jpg",
     "description": "Fitness freak and health advocate",
     "like": 9
   },
   {
     "profile_picture_url": "https://example.com/user5_profile.jpg",
-    "username": "user5",
+    "username": "test",
     "image_url": "https://example.com/user5_image.jpg",
     "description": "Tech geek and coding enthusiast",
     "like": 71
   },
   {
     "profile_picture_url": "https://example.com/user6_profile.jpg",
-    "username": "user6",
+    "username": "test",
     "image_url": "https://example.com/user6_image.jpg",
     "description": "Art and music lover, on a creative journey",
     "like": 53

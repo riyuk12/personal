@@ -14,7 +14,7 @@ function ModalPostViewer({open,onClose,post}) {
       aria-labelledby="modal-title"
       aria-describedby="modal-description"
 
-      sx={{'& .MuiModal':{
+      sx={{'& .MuiModal-root':{
         display:'flex' ,
         justifyContent:'center',
         alignItems:'center'
