@@ -57,33 +57,16 @@ function Homepage() {
             {/* could use router to make better look it up */}
         </div>
         <div className="following">
-            <div className="profile_link">
-                <div className="user user1" onClick={()=>{setactivetab("profile")}}>
-                    <img src={filter} />
-                    <h2>riyuk</h2>
-                </div>
-            </div>
+            
             <div className="suggestedusers">
-                <div className="user user1"  >
-                    <img src={filter} />
-                    <h2>user1</h2>
-                </div>
-                <div className="user user2">
-                    <img src="" />
-                    <h2>user2</h2>
-                </div>
-                <div className="user user3">
-                    <img src="" />
-                    <h2>user3</h2>
-                </div>
-                <div className="user user4">
-                    <img src="" />
-                    <h2>user4</h2>
-                </div>
-                <div className="user user5">
-                    <img src="" />
-                    <h2>user5</h2>
-                </div>
+                <h2>Suggested Users</h2>
+                {userdata.map((elem)=>(
+                    
+                    <div className="user user1" onClick={()=>{setactivetab("profile")}} >
+                        <img src={filter} />
+                        <h2>{elem?.basicProfile?.username}</h2>
+                    </div>
+                ))}
             </div>
         </div>
     </div>
