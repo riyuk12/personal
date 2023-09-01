@@ -15,6 +15,12 @@
 
 .content{
     background-color:#DEF5E5 ; 
+    overflow: hidden;
+
+}
+
+.content> img{
+    width:100%;
 }
 
 .pfp{
