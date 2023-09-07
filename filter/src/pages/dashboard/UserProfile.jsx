@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect } from 'react'
 
 import { useState } from 'react'
 import Post from '../../components/dashboard/Post'
 import ExploreCards from '../../components/dashboard/ExploreCards'
 
 function UserProfile({user,posts}) {
-    const [userPosts,setuserPosts]=useState(posts.filter(post=>post.username==user.basicProfile.username))
+    const [userPosts,setuserPosts]=useState(posts)
+    
+    
+    
   return (
     <div className='userDetailsContainer'>
         

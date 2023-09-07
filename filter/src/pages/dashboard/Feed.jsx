@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Post from '../../components/dashboard/Post'
 
 function Feed({posts}) {
+  
   return (
     <>
             <div className="posts_container">

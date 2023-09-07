@@ -14,14 +14,14 @@ function ModalPostViewer({open,onClose,post}) {
       aria-labelledby="modal-title"
       aria-describedby="modal-description"
 
-      sx={{'&.MuiModal-root':{
-        display:'flex',
+      sx={{'& .MuiModal':{
+        display:'flex' ,
         justifyContent:'center',
         alignItems:'center'
       }}}
     >
       <div className="modal-content">
-        <Button onClick={onClose}>Close Modal</Button>
+        <Button onClick={onClose}>Close</Button>
         <Post  imgurl={post?.image_url} desc={ post?.description} username={post?.username} profile_picture={post?.profile_picture_url} />
       </div>
     </Modal>
